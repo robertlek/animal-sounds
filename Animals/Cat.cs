@@ -1,5 +1,7 @@
-﻿namespace animal_sounds.Animals;
+﻿using animal_sounds.Animals.Base;
 
-public class Cat
+namespace animal_sounds.Animals;
+
+public class Cat(string name, string sound) : Animal(name, sound)
 {
 }
