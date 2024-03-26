@@ -1,7 +1,7 @@
 ﻿using animal_sounds.Animals;
 using animal_sounds.Animals.Base;
 
-List<Animal> animals =
+List<IAnimal> animals =
 [
     new Cat("Cat", "meow"),
     new Chicken("Chicken", "cluck"),

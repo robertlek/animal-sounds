@@ -1,12 +1,12 @@
 ﻿namespace animal_sounds.Animals.Base;
 
-public abstract class Animal(string name, string sound)
+public abstract class Animal(string name, string sound) : IAnimal
 {
-    protected readonly string name = name;
-    protected readonly string sound = sound;
+    protected string Name { get; } = name;
+    protected string Sound { get; } = sound;
 
     public void MakeSound()
     {
-        Console.WriteLine($"{name} makes the sound *{sound}*.");
+        Console.WriteLine($"{Name} makes the sound *{Sound}*.");
     }
 }
