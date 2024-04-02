@@ -2,6 +2,6 @@
 
 namespace animal_sounds.Animals;
 
-public class Chicken(string name, string sound) : Animal(name, sound)
+public class Chicken(string name, string sound) : Animal(name, sound), IAnimal
 {
 }
