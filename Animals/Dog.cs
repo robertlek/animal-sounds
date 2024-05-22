@@ -2,6 +2,11 @@
 
 namespace animal_sounds.Animals;
 
-public class Dog(string name, string sound) : Animal(name, sound), IAnimal
+public class Dog : Animal, IAnimal
 {
+    public Dog()
+    {
+        SetType<Dog>();
+        SetSound("bark");
+    }
 }
